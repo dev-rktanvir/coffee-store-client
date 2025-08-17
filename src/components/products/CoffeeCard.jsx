@@ -1,8 +1,9 @@
 import React from "react";
 import { FaEye, FaEdit, FaTrash } from "react-icons/fa";
+import { Link } from "react-router";
 
 const CoffeeCard = ({ coffee }) => {
-    const { name, chef, price, photo } = coffee;
+    const { _id, name, chef, price, photo } = coffee;
 
     return (
         <div className="bg-[#F4F3F0] rounded-xl shadow-md flex flex-col md:flex-row items-center p-8 gap-4 md:gap-6">
@@ -25,20 +26,21 @@ const CoffeeCard = ({ coffee }) => {
 
             {/* Right: Action Buttons */}
             <div className="flex lg:flex-col gap-3 mt-3 md:mt-0">
+                <Link to={`/coffee-details/${_id}`}>
+                    <button
+                        className="bg-blue-500 hover:bg-blue-600 text-white p-2 rounded-full transition"
+                    >
+                        <FaEye />
+                    </button>
+                </Link>
                 <button
-                    
-                    className="bg-blue-500 hover:bg-blue-600 text-white p-2 rounded-full transition"
-                >
-                    <FaEye />
-                </button>
-                <button
-                    
+
                     className="bg-yellow-500 hover:bg-yellow-600 text-white p-2 rounded-full transition"
                 >
                     <FaEdit />
                 </button>
                 <button
-                    
+
                     className="bg-red-500 hover:bg-red-600 text-white p-2 rounded-full transition"
                 >
                     <FaTrash />
