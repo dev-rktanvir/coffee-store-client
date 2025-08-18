@@ -7,12 +7,12 @@ import { useLoaderData } from 'react-router';
 
 const featurePromiss = fetch('feature.json').then(res => res.json())
 const Home = () => {
-    const coffees = useLoaderData();
+    const allCoffees = useLoaderData();
     return (
         <div>
             <HeroSection></HeroSection>
             <Feature featurePromiss={featurePromiss}></Feature>
-            <Products coffees={coffees}></Products>
+            <Products allCoffees={allCoffees}></Products>
             <FollowUs></FollowUs>
         </div>
     );

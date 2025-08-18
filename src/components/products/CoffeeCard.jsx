@@ -1,8 +1,9 @@
 import React from "react";
 import { FaEye, FaEdit, FaTrash } from "react-icons/fa";
 import { Link } from "react-router";
+import Swal from "sweetalert2";
 
-const CoffeeCard = ({ coffee }) => {
+const CoffeeCard = ({ coffee, handleDelete }) => {
     const { _id, name, chef, price, photo } = coffee;
 
     return (
@@ -41,7 +42,7 @@ const CoffeeCard = ({ coffee }) => {
                     </button>
                 </Link>
                 <button
-
+                    onClick={() => handleDelete(_id)}
                     className="bg-red-500 hover:bg-red-600 text-white p-2 rounded-full transition"
                 >
                     <FaTrash />
