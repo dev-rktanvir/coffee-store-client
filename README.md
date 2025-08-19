@@ -1,12 +1,18 @@
-# React + Vite
+# Espresso Emporium
+A one-page coffee store website was built with React.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🔗 Live: https://rk-tanvir-coffee-store.netlify.app/
 
-Currently, two official plugins are available:
+## Features
+- Add coffee system
+- Edit coffee system
+- Delete coffee system
+- Responsive design
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Tech Stack
+**Frontend:** React, Tailwind CSS, React Icon, sweet alert2, React router
 
-## Expanding the ESLint configuration
+## Backend Repo: https://github.com/dev-rktanvir/coffee-store-server
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Developer
+Rk Tanvir
